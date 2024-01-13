@@ -1,2 +1,2 @@
-# project-FoodHub
+# Project-FoodHub
 An online food delivery website
