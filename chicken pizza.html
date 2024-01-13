@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chicken pizza.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <script>
+        function increaseCount(a, b) {
+  var input = b.previousElementSibling;
+  var value = parseInt(input.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  input.value = value;
+}
+
+function decreaseCount(a, b) {
+  var input = b.nextElementSibling;
+  var value = parseInt(input.value, 10);
+  if (value > 1) {
+    value = isNaN(value) ? 0 : value;
+    value--;
+    input.value = value;
+  }
+}
+function afun()
+{
+    alert('Thank you! Your feedback has been submitted.');
+}
+</script>
+<nav class="navbar">
+    <div class="logo">
+         <img src="feastlogo2.png"> 
+         <p id="nav-p">FeastHub</p>
+      </div>
+          <ul>
+               <li class="list"><a href="home page of website.html">Home</a></li>
+                <li class="list"><a href="Menu2.html">Menu</a></li>
+                <li class="list"><a href="About.html">About</a></li>
+                <li class="list"><a href="http://localhost/feast%20hub/contact%20us.php">Contact</a></li>
+                <li class="list"><a href="http://localhost/feast%20hub/sign%20up%20page.php">SignUp</a></li>
+                
+          </ul>
+ </nav>
+<div class="chicken-pizza">
+    <img src="chicken pizza.png" class="image">
+    <img src="non veg.png" class="non-veg">
+    <p class="non_veg">Non Veg</p>
+    <h1 class="heading">BBQ Chicken Pizza</h1>
+    <img src="star.png" class="rating1">
+    <img src="star.png" class="rating2">
+    <img src="star.png" class="rating3">
+    <img src="star.png" class="rating4">
+    <img src="rating.png"class="rating5">
+    <p class="rate">10 Reviews</p>
+    <p class="description">Savour the irresistible fusion of smoky, tender barbecue chicken,
+         and a medley of savoury toppings atop a golden, crispy crust with our mouth-watering BBQ chicken pizza. </p>
+    <div class="price">
+        <h2>Price</h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i></p>  
+    </div>
+    <p class="rupee">80</p>
+    <div class="quantity">
+        <h2>Quantity</h2>
+    </div>
+    <div class="counter">
+        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+        <input type="text" value="1">
+        <span class="up" onClick='increaseCount(event, this)'>+</span>
+      </div>  
+   <div class="addon">
+    <p>Add on</p>
+   </div>
+   <div class="opt1">
+    <img src="coke.png" class="coke">
+    <p>Coke</p>
+    <input type="checkbox" name="add" value="Coke">
+   </div>
+   <div class="opt2">
+    <img src="french fries.jpg" class="coke">
+    <p>French Fries</p>
+    <input type="checkbox" name="add" value="fries">
+   </div>
+   <div class="opt3">
+    <img src="ice cream.jpg" class="coke">
+    <p>Ice Cream</p>
+    <input type="checkbox" name="add" value="ice cream">
+   </div>
+   <div class="opt4">
+    <img src="pastery.jpg" class="coke">
+    <p>Pastery</p>
+    <input type="checkbox" name="add" value="pastery">
+   </div>
+   <div class="button">
+    <button class="cart" name="cart">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+    <button class="buy" name="buy">Buy now  <i class="fa-solid fa-bag-shopping" style="color: #000000;"></i></button>
+   </div>
+   </div>
+   <section>
+   <div class="related">
+    <p>Related Products</p>
+   </div>
+   <div class="products">
+   <div class="pr1">
+    <div class="shape1">
+   <a href="cheese n corn pizzza.html"> <img src="cheese n corn pizza.png" class="cheese-pizza"></a>
+    </div>
+    <a href="cheese n corn pizzza.html"><h1>Cheese N Corn Pizza</h1></a>
+    <p>Experience the flavour of cheese and corn pizza,
+         where creamy cheese meets the sweetness of corn on a crispy crust.</p>   
+    <div class="price1"><i class="fa-solid fa-indian-rupee-sign"></i>
+    <p>50</p>
+    </div>
+    <button class="cart1">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+   </div>
+   <div class="pr2">
+    <div class="shape2">
+    <a href="veggie pizza.html"><img src="veggie pizza.png" class="veggie_pizza"></a>
+    </div>
+    <a href="veggie pizza.html"><h1>Veggie Paradise Pizza</h1></a>
+    <p>Embrace the goodness of nature and colourful toppings  on a crust with our Veggie Pizza.</p>
+    <div class="price2"><i class="fa-solid fa-indian-rupee-sign"></i>
+    <p>50</p>
+    </div>
+    <button class="cart2" name="cart">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+   </div>
+   <div class="pr3">
+    <div class="shape3">
+    <a href="tandoori pizza.html"><img src="tandoori pizza.png" class="tandoori_pizza"></a>
+    </div>
+    <a href="tandoori pizza.html"><h1>Tandoori Paneer Pizza</h1></a>
+    <p>Experience the exotic fusion of Indian Tandoori flavors and Italian pizza in one delicious bite</p>
+    <div class="price3"><i class="fa-solid fa-indian-rupee-sign"></i>
+    <p>50</p>
+    </div>
+    <button class="cart3">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+   </div>
+   <div class="pr4">
+    <div class="shape4">
+    <a href="onion pizza.html"><img src="paneer and onion pizza.png" class="paneer_pizza"></a>
+    </div>
+    <a href="onion pizza.html"><h1>Paneer & Onion Pizza</h1></a>
+    <p>Paneer and onion pizza offers a delightful fusion of creamy paneer and caramelized onions on a crispy crust.</p>
+    <div class="price4"><i class="fa-solid fa-indian-rupee-sign"></i>
+    <p>50</p>
+    </div>
+    <button class="cart4">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+   </div>
+   </div>
+   </section>
+   <div class="review">
+    <h1>Reviews</h1><hr>
+    <div class="1review">
+    <p class="head">1 Review for BBQ Chciken Pizza</p>
+    <img src="p1.jpg">  
+    <p class="name">Ayiana</p> 
+    <p class="date">- November 23, 2023</p>
+    <div class="star">
+        <i class="fa-solid fa-star" style="color: #f2d422;"></i>
+        <i class="fa-solid fa-star" style="color: #f2d422;"></i>
+        <i class="fa-solid fa-star" style="color: #f2d422;"></i>
+        <i class="fa-solid fa-star" style="color: #f2d422;"></i>
+        <i class="fa-regular fa-star" style="color: #f2d422;"></i>
+        </div>
+    <p class="view">The BBQ chicken pizza was a mouthwatering masterpiece, with its smoky, 
+        tangy sauce perfectly complementing the tender chicken and melted cheese atop a crispy, golden crust.</p> 
+     <p class="heading">Add a review</p>
+    </div>
+    <form>
+    <label for="uname">Name*</label><br><br>
+    <input type="text" id="uname" name="uname" required><br><br>
+    <label for="email">Email*</label><br><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="uname">Your Rating*</label><br><br>
+    <div class="rating">
+    <input type="radio" name="star" id="star1"><label for="star1"></label>
+    <input type="radio" name="star" id="star2"><label for="star2"></label>
+    <input type="radio" name="star" id="star3"><label for="star3"></label>
+    <input type="radio" name="star" id="star4"><label for="star4"></label>
+    <input type="radio" name="star" id="star5"><label for="star5"></label>
+    </div>
+    <br>
+    <label for="review">Your Review*</label><br><br>
+    <textarea name="message" id="review" name="review" rows="5" cols="55" required></textarea>
+    <button type="submit" name="submit" onclick="afun()">Submit</button>
+    </form>
+    <section class="bottom">
+        <div class="bot4">
+            <h1>FeastHub</h1>
+            <h2>Working Hours</h2>
+            <ul>
+                <li>Mon-Fri: 9 AM - 6 PM</li>
+                <li>Saturday: 9 AM - 4 AM</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>
+        <div class="bot2">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: contact@feasthub@gmail.com</li>
+                <li>Phone: +91 9456-7890</li>
+                <li>Address: Phagwara, Punjab, India</li>
+            </ul>
+        </div>
+        <div class="bot1">
+            <div class="bot12">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu2.html">Menu</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+            </ul>
+        </div> 
+        </div>
+        <div class="bot3">
+            <h2>Connect with us</h2>
+            <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=61553934504709"><img src="facebook.png"></a>
+            <a href="https://www.instagram.com/feast_hub12/"><img src="insta.png"></a>
+            <a href="https://twitter.com/Feast_Hub"><img src="twit.png"></a>
+        </div>
+        </div>
+        <div class="up">
+            <a href="#" class="to-top">
+            <i class="fa-solid fa-arrow-up" id="up"></i>
+        </a>
+        </div>
+    </section>
+   </div>
+</body>
+</html>

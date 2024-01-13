@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nutella sandwich.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <script>
+        function increaseCount(a, b) {
+  var input = b.previousElementSibling;
+  var value = parseInt(input.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  input.value = value;
+}
+
+function decreaseCount(a, b) {
+  var input = b.nextElementSibling;
+  var value = parseInt(input.value, 10);
+  if (value > 1) {
+    value = isNaN(value) ? 0 : value;
+    value--;
+    input.value = value;
+  }
+}
+function afun()
+{
+    alert('Thank you! Your feedback has been submitted.');
+}
+</script>
+<nav class="navbar">
+    <div class="logo">
+         <img src="feastlogo2.png"> 
+         <p id="nav-p">FeastHub</p>
+      </div>
+          <ul>
+              <li class="list"><a href="home2.html">Home</a></li>
+              <li class="list"><a href="Menu2.html">Menu</a></li>
+              <li class="list"><a href="About.html">About</a></li>
+              <li class="list"><a href="contact us.html">Contact</a></li>
+              <li class="list"><a href="#signin">SignUp</a></li>
+              <li class="list"><img id="list_img"src="images-removebg-preview.png"></li>
+          </ul>
+ </nav>
+<div class="nutella-sandwich">
+    <img src="nutella sandwich.jpg" class="image">
+    <img src="pure veg.jpg" class="pure-veg">
+    <p class="veg">Pure Veg</p>
+    <h1 class="heading">Nutella Sandwich</h1>
+    <img src="star.png" class="rating1">
+    <img src="star.png" class="rating2">
+    <img src="star.png" class="rating3">
+    <img src="star.png" class="rating4">
+    <img src="rating.png"class="rating5">
+    <p class="rate">10 Reviews</p>
+    <p class="description">Indulge your taste buds with our Nutella sandwich, a heavenly fusion of creamy Nutella spread between layers of soft, fresh bread. 
+        A sweet symphony that's sure to satisfy your cravings with every decadent bite.</p>
+    <div class="price">
+        <h2>Price</h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i></p>  
+    </div>
+    <p class="rupee">70</p>
+    <div class="quantity">
+        <h2>Quantity</h2>
+    </div>
+    <div class="counter">
+        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+        <input type="text" value="1">
+        <span class="up" onClick='increaseCount(event, this)'>+</span>
+      </div>  
+   <div class="addon">
+    <p>Add on</p>
+   </div>
+   <div class="opt1">
+    <img src="coke.png" class="coke">
+    <p>Coke</p>
+    <input type="checkbox" name="add" value="Coke">
+   </div>
+   <div class="opt2">
+    <img src="french fries.jpg" class="coke">
+    <p>French Fries</p>
+    <input type="checkbox" name="add" value="fries">
+   </div>
+   <div class="opt3">
+    <img src="ice cream.jpg" class="coke">
+    <p>Ice Cream</p>
+    <input type="checkbox" name="add" value="ice cream">
+   </div>
+   <div class="opt4">
+    <img src="pastery.jpg" class="coke">
+    <p>Pastery</p>
+    <input type="checkbox" name="add" value="pastery">
+   </div>
+   <div class="button">
+    <button class="cart" name="cart">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+    <button class="buy" name="buy">Buy now  <i class="fa-solid fa-bag-shopping" style="color: #000000;"></i></button>
+   </div>
+   </div>
+   <section>
+   <div class="related">
+    <p>Related Products</p>
+   </div>
+   <div class="products">
+   <div class="pr1">
+    <div class="shape1">
+   <a href="egg sandwich.html"> <img src="egg sandwich.jpg" class="egg-sandwich"></a>
+    </div>
+    <a href="egg sandwich.html"><h1>Eggcellent Delight Sandwich</h1></a>
+    <p>Experience breakfast bliss with our classic egg sandwich- a delicious medley of fluffy eggs embraced by toasted perfection.</p>   
+    <div class="price1"><i class="fa-solid fa-indian-rupee-sign"></i>
+    <p>120</p>
+    </div>
+    <button class="cart1">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+   </div>
+   <div class="pr2">
+    <div class="shape2">
+    <a href="cheese sandwich.html"><img src="cheese sandwich.jpg" class="cheese-sandwich"></a>
+    </div>
+    <a href="cheese sandwich.html"><h1>Cheese Sandwich</h1></a>
+    <p>Savour the simplicity of our grilled cheese sandwich: golden,
+         buttery perfection encasing a melty symphony of cheeses.</p>
+    <div class="price2"><i class="fa-solid fa-indian-rupee-sign"></i>
+    <p>70</p>
+    </div>
+    <button class="cart2" name="cart">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+   </div>
+   <div class="pr3">
+    <div class="shape3">
+    <a href="grilled chicken sandwich.html"><img src="chicken sandwich.jpg" class="chicken-sandwich"></a>
+    </div>
+    <a href="grilled chicken sandwich.html"><h1>Grilled Chicken Sandwich</h1></a>
+    <p>Ignite your taste buds with our grilled chicken sandwich,
+         a perfect fusion of grilled chicken and zesty sauces.</p>
+    <div class="price3"><i class="fa-solid fa-indian-rupee-sign"></i>
+    <p>170</p>
+    </div>
+    <button class="cart3">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+   </div>
+   <div class="pr4">
+    <div class="shape4">
+    <a href="ice cream sandwich.html"><img src="icecream sandwich.jpg" class="icecream-sandwich"></a>
+    </div>
+    <a href="ice cream sandwich.html"><h1>Ice Cream Sandwich</h1></a>
+    <p>This ice cream sandwich, filled with an abundance of chocolate chips, 
+        offers an amazing taste experience.</p>
+    <div class="price4"><i class="fa-solid fa-indian-rupee-sign"></i>
+    <p>75</p>
+    </div>
+    <button class="cart4">Add to cart
+    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+   </div>
+   </div>
+   </section>
+   <div class="review">
+    <h1>Reviews</h1><hr>
+    <div class="1review">
+    <p class="head">1 Review for Nutella Sandwich</p>
+    <img src="girl.jpg">  
+    <p class="name">Ava Jackson</p> 
+    <p class="date">- August 21, 2023</p>
+    <div class="star">
+        <i class="fa-solid fa-star" style="color: #f2d422;"></i>
+        <i class="fa-solid fa-star" style="color: #f2d422;"></i>
+        <i class="fa-solid fa-star" style="color: #f2d422;"></i>
+        <i class="fa-solid fa-star" style="color: #f2d422;"></i>
+        <i class="fa-regular fa-star" style="color: #f2d422;"></i>
+        </div>
+    <p class="view">Embarking on the Nutella sandwich journey felt like a flavour adventure gone wrong. The promise of indulgence fell flat as the lacklustre combination of soft bread and Nutella failed to ignite any excitement,
+         leaving me yearning for a more thrilling taste experience.</p> 
+     <p class="heading">Add a review</p>
+    </div>
+    <form>
+    <label for="uname">Name*</label><br><br>
+    <input type="text" id="uname" name="uname" required><br><br>
+    <label for="email">Email*</label><br><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="uname">Your Rating*</label><br><br>
+    <div class="rating">
+    <input type="radio" name="star" id="star1"><label for="star1"></label>
+    <input type="radio" name="star" id="star2"><label for="star2"></label>
+    <input type="radio" name="star" id="star3"><label for="star3"></label>
+    <input type="radio" name="star" id="star4"><label for="star4"></label>
+    <input type="radio" name="star" id="star5"><label for="star5"></label>
+    </div>
+    <br>
+    <label for="review">Your Review*</label><br><br>
+    <textarea name="message" id="review" name="review" rows="5" cols="55" required></textarea>
+    <button type="submit" name="submit" onclick="afun()">Submit</button>
+    </form>
+    <section class="bottom">
+        <div class="bot4">
+            <h1>FeastHub</h1>
+            <h2>Working Hours</h2>
+            <ul>
+                <li>Mon-Fri: 9 AM - 6 PM</li>
+                <li>Saturday: 9 AM - 4 AM</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>
+        <div class="bot2">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: contact@feasthub@gmail.com</li>
+                <li>Phone: +91 9456-7890</li>
+                <li>Address: Phagwara, Punjab, India</li>
+            </ul>
+        </div>
+        <div class="bot1">
+            <div class="bot12">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="Menu2.html">Menu</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+            </ul>
+        </div> 
+        </div>
+        <div class="bot3">
+            <h2>Connect with us</h2>
+            <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=61553934504709"><img src="facebook.png"></a>
+            <a href="https://www.instagram.com/feast_hub12/"><img src="insta.png"></a>
+            <a href="https://twitter.com/Feast_Hub"><img src="twit.png"></a>
+        </div>
+        </div>
+        <div class="up">
+            <a href="#" class="to-top">
+            <i class="fa-solid fa-arrow-up" id="up"></i>
+        </a>
+        </div>
+    </section>
+   </div>
+</body>
+</html>

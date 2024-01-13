@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    padding: 20px;
+    border: 2px solid silver;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.container h2{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cross{
+    margin-top: -45px;
+    margin-left: 480px;
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button,#reset {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+#changePasswordBtn,#cancelBtn,#saveBtn{
+    margin-bottom: 20px;
+}
+
+#currentPassword,#newPassword{
+    width:250px;
+}
+#savePasswordBtn,#cancelBtn{
+    background-color: orangered;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:80px;
+    
+}
